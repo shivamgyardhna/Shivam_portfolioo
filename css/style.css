@@ -4,6 +4,69 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+
+ /* CATEGORY BAR */
+ .project-category-wrapper {
+   display: inline-flex;
+   gap: 15px;
+   padding: 12px 22px;
+   background: #111;
+   border-radius: 40px;
+ }
+
+ .category-btn {
+   background: transparent;
+   border: 2px solid #ffbd39;
+   color: #ffbd39;
+   padding: 8px 18px;
+   border-radius: 25px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+ .category-btn:hover,
+ .category-btn.active {
+   background: #ffbd39;
+   color: #000;
+ }
+
+ /* PROJECT CARD */
+ .project-box {
+   display: block;
+   background: #0f0f0f;
+   border-radius: 10px;
+   padding: 15px;
+   text-align: center;
+   text-decoration: none;
+   color: inherit;
+   height: 100%;
+   transition: transform 0.4s ease, box-shadow 0.4s ease;
+ }
+
+ .project-box img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   border-radius: 8px;
+ }
+
+ /* HOVER ANIMATION */
+ .project-box:hover {
+   transform: translateY(-12px) scale(1.03);
+   box-shadow: 0 20px 40px rgba(255, 189, 57, 0.25);
+ }
+
+ .project-box h4 {
+   margin-top: 15px;
+   color: #fff;
+ }
+
+ .project-box p {
+   font-size: 14px;
+   color: #ccc;
+ }
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
